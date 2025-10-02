@@ -1,0 +1,24 @@
+{
+  "trainingData": [
+    { "hour": 0, "temperature": 18, "isWeekday": 1, "demand": 3200 },
+    { "hour": 1, "temperature": 17, "isWeekday": 1, "demand": 2900 },
+    { "hour": 6, "temperature": 16, "isWeekday": 1, "demand": 4500 },
+    { "hour": 7, "temperature": 17, "isWeekday": 1, "demand": 5800 },
+    { "hour": 8, "temperature": 19, "isWeekday": 1, "demand": 7200 },
+    { "hour": 9, "temperature": 21, "isWeekday": 1, "demand": 8100 },
+    { "hour": 12, "temperature": 26, "isWeekday": 1, "demand": 9500 },
+    { "hour": 14, "temperature": 28, "isWeekday": 1, "demand": 10200 },
+    { "hour": 17, "temperature": 25, "isWeekday": 1, "demand": 8800 },
+    { "hour": 18, "temperature": 23, "isWeekday": 1, "demand": 9200 },
+    { "hour": 19, "temperature": 21, "isWeekday": 1, "demand": 8500 },
+    { "hour": 22, "temperature": 19, "isWeekday": 1, "demand": 6200 },
+    { "hour": 8, "temperature": 20, "isWeekday": 0, "demand": 5500 },
+    { "hour": 12, "temperature": 27, "isWeekday": 0, "demand": 7800 },
+    { "hour": 18, "temperature": 24, "isWeekday": 0, "demand": 7200 },
+    { "hour": 14, "temperature": 30, "isWeekday": 1, "demand": 11000 },
+    { "hour": 6, "temperature": 15, "isWeekday": 0, "demand": 3800 },
+    { "hour": 20, "temperature": 20, "isWeekday": 1, "demand": 7500 },
+    { "hour": 10, "temperature": 23, "isWeekday": 1, "demand": 8600 },
+    { "hour": 16, "temperature": 26, "isWeekday": 0, "demand": 7400 }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "trainingData": [
+    { "hour": 0, "dayOfWeek": 1, "weather": 0, "congestion": 15 },
+    { "hour": 1, "dayOfWeek": 1, "weather": 0, "congestion": 12 },
+    { "hour": 6, "dayOfWeek": 1, "weather": 0, "congestion": 45 },
+    { "hour": 7, "dayOfWeek": 1, "weather": 1, "congestion": 78 },
+    { "hour": 8, "dayOfWeek": 1, "weather": 1, "congestion": 92 },
+    { "hour": 9, "dayOfWeek": 1, "weather": 0, "congestion": 85 },
+    { "hour": 12, "dayOfWeek": 1, "weather": 0, "congestion": 60 },
+    { "hour": 17, "dayOfWeek": 1, "weather": 1, "congestion": 88 },
+    { "hour": 18, "dayOfWeek": 1, "weather": 1, "congestion": 95 },
+    { "hour": 19, "dayOfWeek": 1, "weather": 0, "congestion": 72 },
+    { "hour": 22, "dayOfWeek": 1, "weather": 0, "congestion": 35 },
+    { "hour": 0, "dayOfWeek": 6, "weather": 0, "congestion": 18 },
+    { "hour": 8, "dayOfWeek": 6, "weather": 0, "congestion": 42 },
+    { "hour": 12, "dayOfWeek": 6, "weather": 1, "congestion": 68 },
+    { "hour": 18, "dayOfWeek": 6, "weather": 0, "congestion": 55 },
+    { "hour": 6, "dayOfWeek": 2, "weather": 1, "congestion": 52 },
+    { "hour": 8, "dayOfWeek": 2, "weather": 0, "congestion": 89 },
+    { "hour": 17, "dayOfWeek": 3, "weather": 1, "congestion": 91 },
+    { "hour": 9, "dayOfWeek": 4, "weather": 0, "congestion": 82 },
+    { "hour": 18, "dayOfWeek": 5, "weather": 1, "congestion": 93 }
+  ]
+}
