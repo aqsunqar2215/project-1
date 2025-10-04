@@ -14,7 +14,6 @@ const AIChatbot: React.FC = () => {
     const getAIResponse = (userInput: string): string => {
         const input = userInput.toLowerCase();
 
-        // Traffic management responses
         if (input.includes('traffic') || input.includes('congestion') || input.includes('jam')) {
             const responses = [
                 'Smart traffic management uses real-time data from IoT sensors to optimize traffic flow. AI algorithms analyze patterns and adjust traffic lights dynamically, reducing congestion by up to 30% in major cities.',
@@ -24,7 +23,6 @@ const AIChatbot: React.FC = () => {
             return responses[Math.floor(Math.random() * responses.length)];
         }
 
-        // Energy optimization responses
         if (input.includes('energy') || input.includes('power') || input.includes('electricity')) {
             const responses = [
                 'Smart cities optimize energy through intelligent grids that balance supply and demand in real-time. AI predicts usage patterns and automatically adjusts distribution, reducing waste by 15-20%.',
@@ -34,7 +32,6 @@ const AIChatbot: React.FC = () => {
             return responses[Math.floor(Math.random() * responses.length)];
         }
 
-        // IoT and sensors responses
         if (input.includes('iot') || input.includes('sensor') || input.includes('device')) {
             const responses = [
                 'Smart cities deploy thousands of IoT sensors to monitor air quality, noise levels, traffic flow, waste management, and more. These sensors create a digital twin of the city for better decision-making.',
@@ -44,12 +41,10 @@ const AIChatbot: React.FC = () => {
             return responses[Math.floor(Math.random() * responses.length)];
         }
 
-        // Parking responses
         if (input.includes('park')) {
             return 'Smart parking systems use sensors in parking spaces to detect availability and guide drivers to open spots via mobile apps. This reduces time spent searching for parking by 40% and decreases emissions from circling vehicles.';
         }
 
-        // Sustainability responses
         if (input.includes('sustain') || input.includes('environment') || input.includes('green') || input.includes('eco')) {
             const responses = [
                 'Smart cities prioritize sustainability through integrated systems: renewable energy, efficient waste management, green transportation, and environmental monitoring. Barcelona reduced water consumption by 25% using smart systems.',
@@ -64,42 +59,34 @@ const AIChatbot: React.FC = () => {
             return 'Smart waste management uses IoT sensors in bins to monitor fill levels and optimize collection routes. This reduces collection costs by 30-40% and decreases truck emissions by only collecting when needed.';
         }
 
-        // Safety and security responses
         if (input.includes('safety') || input.includes('security') || input.includes('crime')) {
             return 'Smart cities enhance safety through AI-powered video analytics, gunshot detection systems, emergency response optimization, and predictive policing. These systems can reduce emergency response times by 20-30%.';
         }
 
-        // Public transport responses
         if (input.includes('transport') || input.includes('bus') || input.includes('metro') || input.includes('transit')) {
             return 'Smart public transportation uses real-time tracking, predictive maintenance, and demand-responsive routing. Mobile apps provide live updates, and AI optimizes schedules based on ridership patterns, improving efficiency by 25%.';
         }
 
-        // Water management responses
         if (input.includes('water')) {
             return 'Smart water management systems detect leaks in real-time using acoustic sensors and pressure monitors. AI algorithms predict pipe failures before they occur, reducing water loss by up to 40% in cities like Singapore.';
         }
 
-        // Examples/general responses
         if (input.includes('example') || input.includes('city') && (input.includes('which') || input.includes('what'))) {
             return 'Leading smart cities include Singapore (comprehensive smart nation initiative), Barcelona (IoT sensors throughout city), Copenhagen (carbon neutral goals), Amsterdam (smart mobility), and Dubai (AI and blockchain integration).';
         }
 
-        // Challenges responses
         if (input.includes('challenge') || input.includes('problem') || input.includes('difficult')) {
             return 'Key smart city challenges include data privacy concerns, high implementation costs, cybersecurity threats, integrating legacy systems, and ensuring digital equity so all residents benefit from smart technologies.';
         }
 
-        // Benefits responses
         if (input.includes('benefit') || input.includes('advantage')) {
             return 'Smart city benefits include reduced operational costs (10-30%), improved quality of life, lower emissions (15-20%), enhanced public safety, better traffic flow, and data-driven decision making for city planners.';
         }
 
-        // AI and data responses
         if (input.includes('ai') || input.includes('artificial intelligence') || input.includes('machine learning') || input.includes('data')) {
             return 'AI in smart cities analyzes vast amounts of sensor data to predict needs, optimize resources, and automate responses. Machine learning models improve over time, making cities increasingly efficient and responsive to resident needs.';
         }
 
-        // Default response with suggestions
         return 'I can help you learn about smart cities! Try asking about: traffic management, energy optimization, IoT sensors, smart parking, public transportation, waste management, sustainability, or specific smart city examples.';
     };
 
@@ -111,7 +98,6 @@ const AIChatbot: React.FC = () => {
         setMessages(prev => [...prev, userMessage]);
         setInput('');
 
-        // Simulate thinking delay for realistic feel
         setTimeout(() => {
             const aiResponse = getAIResponse(input);
             setMessages(prev => [...prev, { role: 'ai' as const, content: aiResponse }]);
